@@ -14,11 +14,11 @@ const methodOverride = require('method-override'); //browsers forms only takes g
 //Use a classe express.Router para criar manipuladores de rota modulares e montáveis. 
 //Uma instância de Router é um middleware e sistema de roteamento completo; por essa razão, ela é frequentemente referida como um “mini-aplicativo”
 //https://expressjs.com/pt-br/guide/routing.html
-const indexRouter = require('./routes/index');
-const roomsRouter = require('./routes/rooms');
-const userRoutes = require('./routes/users')
+const indexRouter = require('../routes/index');
+const roomsRouter = require('../routes/rooms');
+const userRoutes = require('../routes/users')
 
-const User = require('./models/user'); //require user model
+const User = require('../models/user'); //require user model
 
 //const dbUrl = 'mongodb://127.0.0.1:27017/cruzy';
 const dbUrl = process.env["DB_URL"]
@@ -30,6 +30,9 @@ mongoose.connection.once("open", () => {
 });
 
 const app = express();
+
+// Use dynamic port from environment variables or default to 3000
+const port = process.env.PORT || 3000;
 
 app.config = function () {
   // view engine setup
@@ -114,5 +117,12 @@ app.use(function (err, req, res) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+// Only start the server if this file is run directly
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+  });
+}
 
 module.exports = app;
