@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node api/app.js",
-    "vercel-build": "npm install && npm run build"
+    "vercel-build": "npm install && npm run build",
+    "build": "pug views --out public/html --pretty"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
