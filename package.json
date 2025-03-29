@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node api/app.js",
     "vercel-build": "npm install && npm run build",
-    "build": "./node_modules/.bin/pug views --out public/html --pretty"
+    "build": "npx pug views --out public/html --pretty"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
@@ -29,5 +29,8 @@
   },
   "engines": {
     "node": "18.x"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
