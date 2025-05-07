@@ -2,23 +2,22 @@
 
 ![Cruzy Logo](public/stylesheets/images/logo.png)
 
-Utilize inteligência artificial para desenvolver suas próprias cruzadas e explorar uma ampla gama de opções personalizadas para você.
+Disponível em: https://mint-ample-dodo.ngrok-free.app/
 
-Aprimore suas habilidades e descubra como a combinação entre criatividade e tecnologia pode tornar cada desafio único e envolvente.
+Utilize inteligência artificial para desenvolver suas próprias cruzadas e explorar uma ampla gama de opções personalizadas para você.  
 
 ## 📋 Índice
 
 - [Sobre o Projeto](#sobre-o-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Funcionalidades](#funcionalidades)
-- [Como Instalar](#como-instalar)
-- [Como Executar](#como-executar)
+- [Como Executar o Projeto Localmente](#como-executar-o-projeto-localmente)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Arquitetura do Código](#arquitetura-do-código)
 - [Como Contribuir](#como-contribuir)
 - [Licença](#licença)
 
-## 🎮 Sobre o Projeto
+## Sobre o Projeto
 
 Cruzy é uma plataforma web para jogar palavras cruzadas online com temas personalizados por IA. Este projeto foi desenvolvido com Node.js e oferece uma experiência interativa para os amantes de jogos de palavras. Com a inteligência artificial, é possível jogar em diversos níveis de dificuldade e temas variados, tornando o jogo divertido e educativo.
 
@@ -31,7 +30,7 @@ Cruzy é uma plataforma web para jogar palavras cruzadas online com temas person
 - **Luma Rios** @lumarf
 - **Vitor Lacerda**
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - Node.js
 - Express.js
@@ -48,7 +47,7 @@ Cruzy é uma plataforma web para jogar palavras cruzadas online com temas person
 - Jest
 - Render
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Cadastro e login de usuários
 - Jogos de palavras cruzadas interativos
@@ -56,7 +55,7 @@ Cruzy é uma plataforma web para jogar palavras cruzadas online com temas person
 - Modo de Jogo SinglePlayer com histórico de salas
 - Interface responsiva para desktop e dispositivos móveis
 
-## 📥 Como Rodar Projeto Localmente
+## Como Executar o Projeto Localmente
 
 1. Certifique-se de ter o Node.js instalado em seu computador
    ```bash
@@ -97,9 +96,9 @@ Cruzy é uma plataforma web para jogar palavras cruzadas online com temas person
    ```
    
 9. Após iniciar o servidor, acesse o aplicativo em seu navegador:
-[http://localhost:3000](http://localhost:3000)
+[http://localhost:33322](http://localhost:33322)
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 Projeto-Cruzy/
@@ -122,7 +121,7 @@ Projeto-Cruzy/
 └── README.md            # Documentação do projeto
 ```
 
-## 🔧 Arquitetura do Código
+## Arquitetura do Código
 
 ### Backend
 
@@ -178,7 +177,7 @@ O projeto segue uma arquitetura Model-View-Controller (MVC):
 3. Sistema gera o tabuleiro → algoritmo de palavras cruzadas otimiza layout
 4. Usuário joga → interação via Fabric.js e validação em tempo real
 
-## 🤝 Como Contribuir
+## Como Contribuir
 
 1. Faça um fork do projeto
 2. Crie uma nova branch com a sua feature: `git checkout -b minha-feature`
@@ -186,11 +185,11 @@ O projeto segue uma arquitetura Model-View-Controller (MVC):
 4. Push para a branch: `git push origin minha-feature`
 5. Abra um Pull Request
 
-## 📚 Documentação
+## Documentação
 
 Para mais detalhes, consulte nossa [Documentação Oficial](https://docs.google.com/document/d/1JyKNSJcvwg3tDUKqbK3uDbGl7hSoqT--c2qsRwEY06o/edit?usp=drive_link).
 
-## 📝 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
